@@ -21,14 +21,12 @@ Wszystkie wprowadzane do formularza dane powinny być walidowane pod kątem ich 
 Samochód powinien mieć pole tekstowe "registration number", pole tekstowe "name" oraz pole logiczne "isFixed" (z wartością domyślną _false_), poza tym może mieć dowolne inne cechy (np. kolor, rocznik).  
 Po zatwierdzeniu formularza samochód jest dodawany do listy aktywnych pojazdów i zapisywany do pliku.  
 Aplikacja powinna obsługiwać pliki JSON lub XML (lub oba typy, a wybór pliku można zmienić w konfiguracji). Pliki te są wczytywane przy starcie aplikacji.  
-
 <br/>
 
 ##### Lista aktywnych pojazdów:
 Aplikacja powinna umożliwiać podgląd aktywnej listy pojazdów (jeszcze nienaprawionych) z wszystkimi dostępnymi informacjami o danym pojeździe.
 Wyświetlenie listy powinno być dostępne z menu na stronie głównej (lub paska nawigacji).  
 Lista wszystkich aktywnych pojazdów powinna zostać wczytana z pliku podczas uruchomienia aplikacji.  
-
 <br/>
 
 ##### Naprawa samochodu:
@@ -39,11 +37,11 @@ Naprawa samochodu polega na zamianie jego flagi "isFixed" z _false_ na _true_.
 Naprawione samochody powinny zostać zapisane do pliku json/xml w osobnym katalogu "fixed".  
 W katalogu "fixed" nazwy plików to daty wykonywania napraw, wszystkie samochody naprawione tego samego dnia powinny być w jednym pliku.  
 _Przykładowy scenariusz:_  
-Jeżeli dnia 20.11.2020 naprawimy 2 pojazdy, a 21.11.2020 3 pojazdy, to w plikach odpowiadających danym dniom powinny znaleźć się listy o rozmiarach odpowiednio 2 i 3.
+Jeżeli dnia 10.12.2021 naprawimy 2 pojazdy, a 13.12.2021 3 pojazdy, to w plikach odpowiadających danym dniom powinny znaleźć się listy o rozmiarach odpowiednio 2 i 3.
 
 <br/>
 
-#### Przykładowy wygląd aplikacji webowej (propozycja):
+### Przykładowy wygląd aplikacji webowej (propozycja):
 
 <br/>Pasek **`menu`**
 _____________
@@ -55,10 +53,10 @@ _____________
 _____________
 | Numer rejestracyjny | Nazwa | Kolor | Rocznik | Data przyjęcia do serwisu |     |
 | ------------------- | ----- | ----- |-------- | ------------------------- | --- |
-| GD 1A234 | Audi A3 | czarny | 2015 | 2021-03-01 | [napraw]( ) |
-| WI 6DE89 | Fiat Panda | niebieski | 2006 | 2021-03-03 | [napraw]( ) |
-| CGR 657ABX | Skoda Rapid | czerwony | 2018 | 2021-03-04 | [napraw]( ) |
-| GDA K12L | Opel Corsa | biały | 2016 | 2021-03-08 | [napraw]( ) |
+| GD 1A234 | Audi A3 | czarny | 2015 | 2021-12-01 | [napraw]( ) |
+| WI 6DE89 | Fiat Panda | niebieski | 2006 | 2021-12-03 | [napraw]( ) |
+| CGR 657ABX | Skoda Rapid | czerwony | 2018 | 2021-12-04 | [napraw]( ) |
+| GDA K12L | Opel Corsa | biały | 2016 | 2021-12-08 | [napraw]( ) |
 
 - Lista powinna być posortowana według daty przyjęcia pojazdu do serwisu (ostatnio przyjęte auto trafia na dół listy).
 _____________ 
@@ -87,7 +85,7 @@ Podaj numer samochodu do naprawy: GD 1A234
 
 | Numer rejestracyjny | Nazwa | Kolor | Rocznik | Data przyjęcia do serwisu |    |
 | ------------------- | ----- | ----- |-------- | ------------------------- | ---|
-| GD 1A234 | Audi A3 | czarny | 2015 | 2021-03-01 | [napraw]( ) |
+| GD 1A234 | Audi A3 | czarny | 2015 | 2021-12-01 | [napraw]( ) |
 
 3. Po naciśnięciu przycisku `napraw` zostaje zmieniony status tego pojazdu (nie będzie już widoczny na liście pojazdów do naprawy, a pojawia się na liście pojazdów naprawionych).
 4. Jeśli brak pojazdu o podanym numerze rejestracyjnym lub został ten pojazd już naprawiony, to otrzymamy stosowny komunikat.
@@ -98,16 +96,16 @@ _____________
 _____________
 | Numer rejestracyjny | Nazwa | Kolor | Rocznik | Data naprawy |
 | ------------------- | ----- | ----- |-------------- | --- |
-| KR 5D852 | Toyota Yaris | srebrny | 2010 | 2021-03-13 |
-| NIL 2FS36 | Ford Focus | brązowy | 2014 | 2021-03-10 |
-| WSK 557GH | KIA Rio | grafitowy | 2017 | 2021-02-28 |
+| KR 5D852 | Toyota Yaris | srebrny | 2010 | 2021-12-13 |
+| NIL 2FS36 | Ford Focus | brązowy | 2014 | 2021-12-10 |
+| WSK 557GH | KIA Rio | grafitowy | 2017 | 2021-12-09 |
 
 - Lista powinna być posortowana według daty naprawy (ostatnie naprawione na górze listy).
 _____________   
 
 <br/>
 
-##### Wymagania:
+## Wymagania:
 - Aplikacja powinna wykorzystywać frameworki:
   - Spring Boot
   - Thymeleaf / Bootstrap
