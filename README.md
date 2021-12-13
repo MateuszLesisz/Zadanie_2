@@ -32,3 +32,9 @@ Klikając poniższe linki, przejdziesz na stronę z podglądem instrukcji.
 ### [Zadanie 5 - Struktury danych w Java](./Ex5)
 
 ### [Zadanie 6 - Spring Boot - kontroler, endpoint](./Ex6)
+
+
+---
+## Zadania nieobowiązkowe
+
+### [Bonus 1 - Serwis samochodowy](./Bonus1)
