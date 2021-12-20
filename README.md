@@ -33,6 +33,8 @@ Klikając poniższe linki, przejdziesz na stronę z podglądem instrukcji.
 
 ### [Zadanie 6 - Spring Boot - kontroler, endpoint](./Ex6)
 
+### [Zadanie 7 - Spring Boot - MVC - Thymeleaf](./Ex7)
+
 
 ---
 ## Zadania nieobowiązkowe
