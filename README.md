@@ -37,6 +37,8 @@ Klikając poniższe linki, przejdziesz na stronę z podglądem instrukcji.
 
 ### [Zadanie 8 - Java 8 - Streamy & Lambdy](./Ex8)
 
+### [Zadanie 9 - Testy jednostkowe](./Ex9)
+
 ---
 ## Zadania nieobowiązkowe
 
