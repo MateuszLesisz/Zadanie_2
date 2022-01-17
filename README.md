@@ -35,6 +35,7 @@ Klikając poniższe linki, przejdziesz na stronę z podglądem instrukcji.
 
 ### [Zadanie 7 - Spring Boot - MVC - Thymeleaf](./Ex7)
 
+### [Zadanie 8 - Java 8 - Streamy & Lambdy](./Ex8)
 
 ---
 ## Zadania nieobowiązkowe
