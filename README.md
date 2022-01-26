@@ -1,4 +1,4 @@
-# Zadanie_2# Zadanie 2 - Podstawy programowania Java SE
+Zadanie 2 - Podstawy programowania Java SE
 ### Zakres: klasa, obiekt, konstruktor, getter, setter + git 
 
 
